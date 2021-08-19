@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
+import dataprovider.DataStore;
 
 public class AccuweatherPageTest {
     WebDriver driver=null;
@@ -30,8 +31,6 @@ public class AccuweatherPageTest {
         System.out.println(infoPage.getWindDetails());
         System.out.println(infoPage.getHumidityDetails());
     }
-
-
 
 
 }

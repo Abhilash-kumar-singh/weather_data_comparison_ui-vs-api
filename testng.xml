@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/AccuweatherPageTest.java">
+        <classes><class name="tests.AccuweatherPageTest">
+            <methods><include name="fetchAccuweatherData"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
