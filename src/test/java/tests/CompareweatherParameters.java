@@ -7,8 +7,9 @@ public class CompareweatherParameters {
     public void compare(){
         float uiTempData=new AccuweatherPageTest().uiTemp;
         float apiTempData=new OpenweatherAPIPageTest().apiTemp;
-        float uiFaren=(float)((uiTempData*9)/5)+32;
-        System.out.println(uiFaren);
-        System.out.println(apiTempData);
+        float v = (float) 273.15;
+        float apiCelcius=apiTempData -v;
+        System.out.println(uiTempData);
+        System.out.println(apiCelcius);
     }
 }

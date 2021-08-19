@@ -15,13 +15,13 @@ public class TestNGRunner {
         suites.add("/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/testng.xml");
         objTNG.setTestSuites(suites);
         objTNG.run();
-        /*
+
         for(int i=0;i<5;i++){
             objTNG.run();
             testCount=i;
         }
 
-         */
+
 
     }
 }

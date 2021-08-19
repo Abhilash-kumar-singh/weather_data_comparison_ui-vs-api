@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-19T23:47:31 IST" name="api test suite" finished-at="2021-08-19T23:47:36 IST" duration-ms="5277">
+  <suite started-at="2021-08-19T23:53:55 IST" name="api test suite" finished-at="2021-08-19T23:54:01 IST" duration-ms="5926">
     <groups>
     </groups>
-    <test started-at="2021-08-19T23:47:31 IST" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/OpenweatherAPIPageTest.java" finished-at="2021-08-19T23:47:36 IST" duration-ms="5277">
+    <test started-at="2021-08-19T23:53:55 IST" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/OpenweatherAPIPageTest.java" finished-at="2021-08-19T23:54:01 IST" duration-ms="5926">
       <class name="tests.OpenweatherAPIPageTest">
-        <test-method signature="checkStatusCode()[pri:0, instance:tests.OpenweatherAPIPageTest@55183b20]" started-at="2021-08-19T23:47:31 IST" name="checkStatusCode" finished-at="2021-08-19T23:47:36 IST" duration-ms="5272" status="PASS">
+        <test-method signature="checkStatusCode()[pri:0, instance:tests.OpenweatherAPIPageTest@55183b20]" started-at="2021-08-19T23:53:55 IST" name="checkStatusCode" finished-at="2021-08-19T23:54:01 IST" duration-ms="5921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OpenweatherAPIPageTest@55183b20]" started-at="2021-08-19T23:47:36 IST" name="tearDown" finished-at="2021-08-19T23:47:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OpenweatherAPIPageTest@55183b20]" started-at="2021-08-19T23:54:01 IST" name="tearDown" finished-at="2021-08-19T23:54:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.OpenweatherAPIPageTest -->
     </test> <!-- /Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/OpenweatherAPIPageTest.java -->
   </suite> <!-- api test suite -->
-  <suite started-at="2021-08-19T23:46:45 IST" name="ui test suite" finished-at="2021-08-19T23:47:25 IST" duration-ms="40923">
+  <suite started-at="2021-08-19T23:53:11 IST" name="ui test suite" finished-at="2021-08-19T23:53:50 IST" duration-ms="39038">
     <groups>
     </groups>
-    <test started-at="2021-08-19T23:46:45 IST" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/AccuweatherPageTest.java" finished-at="2021-08-19T23:47:25 IST" duration-ms="40923">
+    <test started-at="2021-08-19T23:53:11 IST" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/AccuweatherPageTest.java" finished-at="2021-08-19T23:53:50 IST" duration-ms="39038">
       <class name="tests.AccuweatherPageTest">
-        <test-method is-config="true" signature="PageInitialisation()[pri:0, instance:tests.AccuweatherPageTest@72057ecf]" started-at="2021-08-19T23:46:45 IST" name="PageInitialisation" finished-at="2021-08-19T23:46:58 IST" duration-ms="13553" status="PASS">
+        <test-method is-config="true" signature="PageInitialisation()[pri:0, instance:tests.AccuweatherPageTest@72057ecf]" started-at="2021-08-19T23:53:11 IST" name="PageInitialisation" finished-at="2021-08-19T23:53:24 IST" duration-ms="12485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PageInitialisation -->
-        <test-method signature="fetchAccuweatherData()[pri:0, instance:tests.AccuweatherPageTest@72057ecf]" started-at="2021-08-19T23:46:58 IST" name="fetchAccuweatherData" finished-at="2021-08-19T23:47:25 IST" duration-ms="27172" status="FAIL">
+        <test-method signature="fetchAccuweatherData()[pri:0, instance:tests.AccuweatherPageTest@72057ecf]" started-at="2021-08-19T23:53:24 IST" name="fetchAccuweatherData" finished-at="2021-08-19T23:53:50 IST" duration-ms="26395" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".cur-con-weather-card__body .temp"}
@@ -36,8 +36,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Abhilashs-MacBook-Pro.local', ip: 'fe80:0:0:0:4fa:5cdc:b3d2:7397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/3x/p7jm3gy131l...}, goog:chromeOptions: {debuggerAddress: localhost:53719}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e47c5aad5c1c6203739fef2b1c93db1a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/3x/p7jm3gy131l...}, goog:chromeOptions: {debuggerAddress: localhost:55507}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f24ce294ff8cf2f8f5a2ac8828925376
 *** Element info: {Using=css selector, value=.cur-con-weather-card__body .temp}]]>
             </message>
             <full-stacktrace>
@@ -47,8 +47,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Abhilashs-MacBook-Pro.local', ip: 'fe80:0:0:0:4fa:5cdc:b3d2:7397%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/3x/p7jm3gy131l...}, goog:chromeOptions: {debuggerAddress: localhost:53719}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e47c5aad5c1c6203739fef2b1c93db1a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/3x/p7jm3gy131l...}, goog:chromeOptions: {debuggerAddress: localhost:55507}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f24ce294ff8cf2f8f5a2ac8828925376
 *** Element info: {Using=css selector, value=.cur-con-weather-card__body .temp}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -101,19 +101,19 @@ at tests.TestNGRunner.main(TestNGRunner.java:17)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchAccuweatherData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AccuweatherPageTest@72057ecf]" started-at="2021-08-19T23:47:25 IST" name="tearDown" finished-at="2021-08-19T23:47:25 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AccuweatherPageTest@72057ecf]" started-at="2021-08-19T23:53:50 IST" name="tearDown" finished-at="2021-08-19T23:53:50 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.AccuweatherPageTest -->
     </test> <!-- /Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/AccuweatherPageTest.java -->
   </suite> <!-- ui test suite -->
-  <suite started-at="2021-08-19T23:47:41 IST" name="All Test Suite" finished-at="2021-08-19T23:47:41 IST" duration-ms="7">
+  <suite started-at="2021-08-19T23:54:06 IST" name="All Test Suite" finished-at="2021-08-19T23:54:06 IST" duration-ms="6">
     <groups>
     </groups>
-    <test started-at="2021-08-19T23:47:41 IST" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/CompareweatherParameters.java" finished-at="2021-08-19T23:47:41 IST" duration-ms="7">
+    <test started-at="2021-08-19T23:54:06 IST" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/CompareweatherParameters.java" finished-at="2021-08-19T23:54:06 IST" duration-ms="6">
       <class name="tests.CompareweatherParameters">
-        <test-method signature="compare()[pri:0, instance:tests.CompareweatherParameters@293a5bf6]" started-at="2021-08-19T23:47:41 IST" name="compare" finished-at="2021-08-19T23:47:41 IST" duration-ms="1" status="PASS">
+        <test-method signature="compare()[pri:0, instance:tests.CompareweatherParameters@293a5bf6]" started-at="2021-08-19T23:54:06 IST" name="compare" finished-at="2021-08-19T23:54:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compare -->
