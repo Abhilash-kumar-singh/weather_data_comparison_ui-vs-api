@@ -25,17 +25,17 @@ public class OpenweatherAPIPageTest {
         String city= (String) data[dataCounterApi][0];
         System.out.println(city);
         int expectedStatusCode=(int) data[dataCounterApi][1];
-        System.out.println(expectedStatusCode);
+
         RestAssured.baseURI = "https://api.openweathermap.org/data/2.5/weather";
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.get("?q="+city+"&appid="+(new ApiKey().apikey));
         int statusCode = response.getStatusCode();
-        System.out.println(statusCode);
+
         JsonPath extractor=response.jsonPath();
         System.out.println((String)extractor.get("main").toString());
         String temperature=new StringToList().converter(extractor.get("main").toString())[0];
         apiTemp=Float.parseFloat(temperature.split("=")[1]);
-        System.out.println(apiTemp);
+
 
         Assert.assertEquals(statusCode /*actual value*/,  expectedStatusCode/*expected value*/, "Correct status code returned");
     }
