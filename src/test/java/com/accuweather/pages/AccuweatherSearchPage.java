@@ -1,10 +1,9 @@
 package com.accuweather.pages;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 
 
 public class AccuweatherSearchPage {
@@ -25,14 +24,13 @@ public class AccuweatherSearchPage {
 
     public void enterLocation(String location){
         searchField.sendKeys(location+ Keys.RETURN);
-        firstElement.click();
+        try {
+            firstElement.click();
+        }catch(NoSuchElementException e){
 
+        }
     }
 
-    public void closeAd(){
-        driver.switchTo().frame("google_ads_iframe_/6581/web/in/interstitial/admin/search_0");
-        adCloseButton.click();
-    }
 
 
 
