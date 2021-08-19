@@ -3,9 +3,7 @@ package com.accuweather.pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import java.util.List;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 
 public class AccuweatherSearchPage {
@@ -32,30 +30,7 @@ public class AccuweatherSearchPage {
 
         }
     }
-    public void ifAdLocated(String frame){
-        try {
-            driver.switchTo().frame(frame);
-            System.out.println(driver.findElement(By.id("dismiss-button")).isDisplayed());
-            if (driver.findElement(By.id("dismiss-button")).isDisplayed()) {
-                adCloseButton.click();
-            }
-        }
-        catch(NoSuchElementException e){
-            System.out.println("hello");
-        }
-        catch(NoSuchFrameException e){
 
-        }finally {
-            driver.switchTo().parentFrame();
-        }
-        System.out.println("hello");
-    }
-
-    public void closeAd(){
-        driver.switchTo().frame("google_ads_iframe_/6581/web/in/interstitial/admin/search_0");
-        adCloseButton.click();
-
-    }
 
 
 

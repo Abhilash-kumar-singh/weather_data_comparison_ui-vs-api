@@ -16,6 +16,8 @@ public class InformationPage {
     WebElement wind;
     @FindBy(xpath = "/html/body/div/div[5]/div[1]/div[1]/div[2]/div[4]/div[1]/div[3]/div[2]")
     WebElement humidity;
+    @FindBy(css = ".cur-con-weather-card__body .temp")
+    WebElement temperature;
     @FindBy(id = "dismiss-button")
     WebElement adCloseButton;
 
@@ -29,25 +31,8 @@ public class InformationPage {
     public String getHumidityDetails(){
         return humidity.getText();
     }
-    public void ifAdLocated(String frame){
-        try {
-            driver.switchTo().frame(frame);
-            System.out.println(driver.findElement(By.id("dismiss-button")).isDisplayed());
-            if (driver.findElement(By.id("dismiss-button")).isDisplayed()) {
-                adCloseButton.click();
-
-
-            }
-
-        }
-        catch(NoSuchElementException e){
-            System.out.println("hello");
-        }
-        catch(NoSuchFrameException e){
-
-        }finally {
-            driver.switchTo().parentFrame();
-        }
-        System.out.println("hello");
+    public String getTemperatureDetails(){
+        return temperature.getText();
     }
+
 }

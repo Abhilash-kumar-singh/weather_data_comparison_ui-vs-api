@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ui test suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/AccuweatherPageTest.java(failed)">
+    <classes>
+      <class name="tests.AccuweatherPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="PageInitialisation"/>
+          <include name="fetchAccuweatherData"/>
+        </methods>
+      </class> <!-- tests.AccuweatherPageTest -->
+    </classes>
+  </test> <!-- /Users/abhilashsingh/IdeaProjects/weatherComparisonTest/src/test/java/tests/AccuweatherPageTest.java(failed) -->
+</suite> <!-- Failed suite [ui test suite] -->
