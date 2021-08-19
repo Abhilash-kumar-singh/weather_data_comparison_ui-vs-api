@@ -3,6 +3,8 @@ How to run?
 Step 1: clean install of POM.xml
 Step 2: In tests package, find a file named "TestNGRunner.java" and execute it's main method. It will automatically run subtestfiles(3 testfiles)
 
+Note: ignore target directory 
+
 Dependencies used?
 1.TestNG
 2.Selenium
