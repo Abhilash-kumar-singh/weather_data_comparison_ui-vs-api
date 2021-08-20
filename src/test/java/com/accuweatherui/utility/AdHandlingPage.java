@@ -13,7 +13,7 @@ public class AdHandlingPage {
     public void ifAdLocated(String frame){
         try {
             driver.switchTo().frame(frame);
-            System.out.println(driver.findElement(By.id("dismiss-button")).isDisplayed());
+
             if (driver.findElement(By.id("dismiss-button")).isDisplayed()) {
                 //adCloseButton.click();
                 driver.findElement(By.id("dismiss-button")).click();
