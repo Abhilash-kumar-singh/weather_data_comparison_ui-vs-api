@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class AccuweatherSearchPage {
-    public WebDriver driver=null;
+    public WebDriver driver;
     public AccuweatherSearchPage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
@@ -22,15 +22,30 @@ public class AccuweatherSearchPage {
     @FindBy(id="dismiss-button")
     WebElement adCloseButton;
 
+    @FindBy(className = "no-results-text")
+    WebElement errorMessage;
+
     public void enterLocation(String location){
         searchField.sendKeys(location+ Keys.RETURN);
+
+    }
+
+    public void selectFirstLocation(){
         try {
             firstElement.click();
         }catch(NoSuchElementException e){
 
         }
     }
+    public Boolean validateSearch(){
+        try{
+            System.out.println(errorMessage.isDisplayed());
+        }catch(NoSuchElementException e){
+            return true;
+        }
+        return false;
 
+    }
 
 
 

@@ -1,0 +1,94 @@
+
+
+
+Complete test sequence- 0
+==========
+
+UI TEST SUITE
+----------
+Test subject- delhi
+Test status- true
+Temperature- 27.0
+
+API TEST SUITE
+----------
+Test subject- delhi
+Test status- true
+Temperature- 24.929986572265648
+
+COMPARISON TEST SUITE
+----------
+Test status- FAIL
+==========
+
+
+Complete test sequence- 1
+==========
+
+UI TEST SUITE
+----------
+Test subject- lucknow
+Test status- true
+Temperature- 27.0
+
+API TEST SUITE
+----------
+Test subject- lucknow
+Test status- true
+Temperature- 26.050012207031273
+
+COMPARISON TEST SUITE
+----------
+Test status- PASS
+==========
+
+
+Complete test sequence- 2
+==========
+
+UI TEST SUITE
+----------
+Test subject- new york
+Test status- true
+Temperature- 25.0
+
+API TEST SUITE
+----------
+Test subject- new york
+Test status- true
+Temperature- 24.990014648437523
+
+COMPARISON TEST SUITE
+----------
+Test status- PASS
+==========
+
+
+Complete test sequence- 3
+==========
+
+UI TEST SUITE
+----------
+Test subject- bangalore
+Test status- true
+Temperature- 27.0
+
+API TEST SUITE
+----------
+Test subject- bangalore
+Test status- true
+Temperature- 27.170007324218773
+
+COMPARISON TEST SUITE
+----------
+Test status- PASS
+==========
+
+
+Complete test sequence- 4
+==========
+
+COMPARISON TEST SUITE
+----------
+Test status- PASS
+==========

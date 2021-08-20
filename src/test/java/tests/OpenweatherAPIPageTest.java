@@ -13,12 +13,14 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import reportgenerator.addDataToFile;
 
 
 public class OpenweatherAPIPageTest {
     static int dataCounterApi= 0;
     Object [][] data=new DataStore().dataprovider;
     public static float apiTemp=0;
+    public static boolean ifTestPassed=true;
 
     @Test
     public void checkStatusCode(){
@@ -30,7 +32,11 @@ public class OpenweatherAPIPageTest {
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.get("?q="+city+"&appid="+(new ApiKey().apikey));
         int statusCode = response.getStatusCode();
-
+        if(statusCode==200){
+            ifTestPassed=true;
+        }else{
+            ifTestPassed=false;
+        }
         JsonPath extractor=response.jsonPath();
         System.out.println((String)extractor.get("main").toString());
         String temperature=new StringToList().converter(extractor.get("main").toString())[0];
@@ -42,5 +48,7 @@ public class OpenweatherAPIPageTest {
     @AfterMethod
     public void tearDown(){
         dataCounterApi+=1;
+        String testData="\n\nAPI TEST SUITE\n----------\n"+"Test subject- "+(String) data[dataCounterApi][0]+"\n"+ "Test status- "+ifTestPassed+"\nTemperature- "+(apiTemp-273.15);
+        new addDataToFile().dataBuilder("test1.txt",testData);
     }
 }

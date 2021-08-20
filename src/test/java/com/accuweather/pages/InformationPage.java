@@ -27,6 +27,7 @@ public class InformationPage {
     WebElement adCloseButton;
 
 
+
     public void clickMoreDetailsButton(){
         moreDetails.click();
     }
@@ -39,5 +40,6 @@ public class InformationPage {
     public String getTemperatureDetails(){
         return temperature.getText();
     }
+
 
 }

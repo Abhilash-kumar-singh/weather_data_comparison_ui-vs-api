@@ -4,9 +4,10 @@ import org.testng.TestNG;
 
 import java.util.ArrayList;
 import java.util.List;
+import reportgenerator.addDataToFile;
 
 public class TestNGRunner {
-    static int testCount=0;
+
     public static void main(String [] args){
         TestNG objTNG=new TestNG();
         List<String> suites=new ArrayList<String>();
@@ -14,14 +15,18 @@ public class TestNGRunner {
         suites.add("/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/apitestng.xml");
         suites.add("/Users/abhilashsingh/IdeaProjects/weatherComparisonTest/testng.xml");
         objTNG.setTestSuites(suites);
-        objTNG.run();
 
         for(int i=0;i<5;i++){
+
+            String data="\n\n\nComplete test sequence- "+i+"\n==========";
+            new addDataToFile().dataBuilder("test1.txt",data);
+
             objTNG.run();
-            testCount=i;
+
+            data="\n==========";
+            new addDataToFile().dataBuilder("test1.txt",data);
+
+
         }
-
-
-
     }
 }
